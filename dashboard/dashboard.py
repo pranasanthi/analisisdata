@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Buka dan baca dataset yang digunakan
-orders_df = pd.read_csv('olist_orders_dataset.csv')
-order_items_df = pd.read_csv('olist_order_items_dataset.csv')
-customers_df = pd.read_csv('olist_customers_dataset.csv')
+orders_df = pd.read_csv('dashboard/olist_orders_dataset.csv')
+order_items_df = pd.read_csv('dashboard/olist_order_items_dataset.csv')
+customers_df = pd.read_csv('dashboard/olist_customers_dataset.csv')
 
 # Merge data
 merged_df = order_items_df.merge(orders_df, on='order_id').merge(customers_df, on='customer_id')
